@@ -133,16 +133,10 @@
             label = "E_ENTER";
         };
 
-        ctrl_v_v_ent: ctrl_v_v_ent {
+        ctrl_v: ctrl_v_v_ent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LA(LC(V))>,
-                <&macro_wait_time 100>,
-                <&kp V>,
-                <&macro_wait_time 100>,
-                <&kp ENTER>;
-
+            bindings = <&kp LC(V)>;
             label = "CTRL_V_V_ENT";
         };
 
@@ -377,8 +371,8 @@
             layers = <0>;
         };
 
-        ctrl_Val_v {
-            bindings = <&ctrl_v_v_ent>;
+        ctrl_v {
+            bindings = <&ctrl_v>;
             key-positions = <50 66>;
             layers = <0>;
         };
